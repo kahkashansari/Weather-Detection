@@ -6,11 +6,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WeatherMainComponent } from './Components/weather-main/weather-main.component';
 import { MaterialModule } from './material/material.module';
 import { HttpClientModule } from '@angular/common/http';
+import { UiWeatherDesignComponent } from './ui-weather-design/ui-weather-design.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WeatherMainComponent
+    WeatherMainComponent,
+    UiWeatherDesignComponent
   ],
   imports: [
     BrowserModule,

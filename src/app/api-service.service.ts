@@ -9,16 +9,15 @@ export class ApiServiceService {
 
   constructor(private httpSerice : HttpClient) { }
 
-  getWeatherApi(){
-    const gets = this.httpSerice.get(environment.baseUrl);
-    return gets;
+  getWeatherApi(latitude:string,longitude:string){
+   return this.httpSerice.get(`${environment.BASE_URL}lat=${latitude}&lon=${longitude}${environment.APP_ID}`);  //for concatinating
   }
 
-  postWeatherApi(){
-    const post = this.httpSerice.post(environment.baseUrl,"")
-  }
+  // postWeatherApi(){
+  //   const post = this.httpSerice.post(environment.baseUrl,"")
+  // }
 
-  updateWeatherApi(){
-    const update = this.httpSerice.put(environment.baseUrl,"")
-  }
+  // updateWeatherApi(){
+  //   const update = this.httpSerice.put(environment.baseUrl,"")
+  // }
 }

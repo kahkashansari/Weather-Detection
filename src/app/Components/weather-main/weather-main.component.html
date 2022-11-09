@@ -3,13 +3,28 @@
         <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
             <mat-icon>menu</mat-icon>
         </button>
-        <span>Weather Detection App</span>
+        <span class="ms-3">Weather Detection App</span>
         <span class="example-spacer"></span>
         <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
             <mat-icon>favorite</mat-icon>
         </button>
-        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-            <mat-icon>share</mat-icon>
+        <button  mat-icon-button class="example-icon ms-3" aria-label="Example icon-button with share icon">
+            <mat-icon >share</mat-icon>
         </button>
     </mat-toolbar>
+
+    <div class="weatherDetails">
+        <div class="container">
+            <div class="col-6">
+                <p (click)="getUserLocation()" class="d-flex city"><mat-icon> location_on</mat-icon> <span>Mumbai</span></p>
+                <div>
+                    <p>Latitude :</p>
+                    <p>Longitude : </p>
+                </div>  
+            </div>
+        </div>
+    </div>
 </div>
+
+<i class="fa-sharp fa-solid fa-user"></i>
+<i class="fa fa-save fa-2x"></i>

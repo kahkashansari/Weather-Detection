@@ -5,7 +5,13 @@
 export const environment = {
   production: false,
 
-  baseUrl : "https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=da931ad4502df1d216edb321e2af6ecc",
+  // ACTUAL URL
+  // https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=da931ad4502df1d216edb321e2af6ecc
+  //SEGRIGATED BELOW
+  
+  BASE_URL : "https://api.openweathermap.org/data/2.5/weather?",
+
+  APP_ID : "&appid=da931ad4502df1d216edb321e2af6ecc"
 };
 
 /*
