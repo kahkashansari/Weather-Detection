@@ -1,0 +1,44 @@
+<div class="container mb-3">
+    <h2>One way Binding</h2>
+    <div class="oneWayBind">
+        <!-- <input type="text" placeholder="enter name" [disabled]= "isDisable"> -->       
+        <!-- this is wrong u cannt declare boolean value in a string  -->
+        
+        <input type="text" placeholder="enter name" [disabled]=isDisable>
+
+        <p>{{onWayBinding}}</p>
+    </div>
+</div>
+
+<div class="container mb-3">
+    <div class="eventBinding">
+        <p>Event Binding means of click of button etc u will bind event like (click event), onclick onchange etc</p>
+
+        <button (click)="onChange()">Click Me</button>
+    </div>
+</div>
+
+
+<div class="container">
+    <h2>TWO WAY binding</h2>
+    <div class="ngModel Practice">
+        <p>
+            1) HTML to TS --- event binding  <br>
+            2)TS to HTML --- data binding   <br>
+
+            But angular provides easy of way of binding wich is TWO WAY binding using ng-Modal <br>
+
+            Syntax: [(ngModal)] = "" ---> Banana in a box <br>
+
+            [] property binding which is data flow from class to template <br>
+            () event binding which is data flow from template to class <br>
+
+            <b>Note:</b>    <br>
+            without formModules it doesnt work
+        </p>
+
+        <!-- ngModel -->
+
+        <input [(ngModel)]="name" type="text"> {{name}}
+    </div>
+</div>

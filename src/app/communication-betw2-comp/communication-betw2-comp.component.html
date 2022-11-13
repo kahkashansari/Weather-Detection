@@ -1,0 +1,24 @@
+<div class="container">
+    <!-- Explaination Communication between Two component -->
+<p>
+    1. Communication between the related component
+        parent comp --> child comp
+            @Input    -- Here, child will receive input from parent
+        parent comp <-- child comp
+            @ Output -- Childs want to send data to parent will use output
+
+        Example :
+
+            Lead Module
+                leads-listing
+                    leads-grid
+                    leads-tools
+                        download-excel
+                        download-pdf
+    
+    2. Communication between totally unrelated components
+        Component 1 -->  Services  <-- Component 2
+
+        Services is a common reusalble piece of funtionality shared between different component
+</p>
+</div>
